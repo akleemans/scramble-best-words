@@ -49,7 +49,7 @@ print "Content-Type: text/plain;charset=utf-8"
 print 
 
 form = cgi.FieldStorage()
-grid = form['grid'].value
+grid = form['grid'].value.upper()
 print "You entered:", grid
 
 if len(grid) != 16:
